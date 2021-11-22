@@ -1,6 +1,6 @@
 import React from "react";
 
-const TwoColorfulMessage = (props) => {
+export const TwoColorfulMessage = (props) => {
   const { color, children } = props; // 分割代入
 
   const contentStyle = {
@@ -10,5 +10,3 @@ const TwoColorfulMessage = (props) => {
 
   return <p style={contentStyle}>{children}</p>; // 分割代入によりprops.が省略
 };
-
-export default TwoColorfulMessage;
